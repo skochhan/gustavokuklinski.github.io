@@ -5,7 +5,7 @@ date:   2013-11-21 14:13:12
 categories: jekyll update
 ---
 
-Testando Markdown :)
+Testando Markdown :
 
 {% highlight ruby %}
 def print_hi(name)
