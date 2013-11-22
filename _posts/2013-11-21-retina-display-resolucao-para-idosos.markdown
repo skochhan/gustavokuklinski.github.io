@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Retina Display - Resolução para idosos?"
-description: "Entenda porque a Apple Inc. criou o retina display e como ele está sendo atualmente (Atenção, o texto a seguir é fictício e não se passa de uma brincadeira!)"
+description: "Entenda porque a Apple Inc. criou o retina display e como ele está sendo atualmente (Atenção, o texto a seguir é fictício e não se passa de uma brincadeira)"
 date:   2013-11-21
 categories: blog
 ---
