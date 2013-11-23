@@ -97,6 +97,19 @@ a.icon-linkk {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.posts h1 {
+  font-family: Arial;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+.posts table td{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  font-family: arial;
+  font-size: 0.8em;
+}
 .posts a.bt-success {
   text-decoration: none;
   font-family: Arial;
@@ -114,7 +127,7 @@ a.icon-linkk {
   color: #c7c7c7;
   margin-top: 10px;
   margin-bottom: 10px;
-
+  text-transform: uppercase;
 }
 .posts p.post-description,
 .posts p {
