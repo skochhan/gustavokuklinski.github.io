@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
+        <title>KUKLINSKI - {{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
         <!-- syntax highlighting CSS -->
@@ -15,7 +15,15 @@
     <body>
       <header class="container-fluid">
         <div class="row">
-          <div class="block3 header">
+          <div class="block3 
+            {% if page.title == "PORTFOLIO" %}
+              header-portfolio
+            {% elsif page.title == "CONTATO" %}
+              header-contato
+            {% else %}
+              header-home
+            {% endif %}
+            ">
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
             <h3 class="subtitle">Web Developer :: Jekyll - Ruby On Rails</h3>
 
@@ -59,15 +67,15 @@
             <div class="block1">
               <h3 class="about">Social Hub</h3><br />
               <p class="about-text">
-                Com o crescimento das redes sociais, o melhor meio de encontrar alguém é através delas!<br />
+                Com o crescimento das redes sociais, o melhor meio de encontrar alguém é através delas!
                 Caso deseje entrar em contato, estou livre para conversar sobre programação ou discutir sobre um futuro projeto ;)
               </p><br /><br />
               <p class="txt-center">
-                <a class="github-link" href="https://github.com/gustavokuklinski/" target="_blank"><span class="icon-github"></span> </a>
-                <a class="github-link" href="https://github.com/gustavokuklinski/" target="_blank"><span class="icon-google-plus-sign"></span> </a>
-                <a class="github-link" href="https://github.com/gustavokuklinski/" target="_blank"><span class="icon-pinterest"></span> </a>
-                <a class="github-link" href="https://github.com/gustavokuklinski/" target="_blank"><span class="icon-twitter"></span> </a>
-                <a class="github-link" href="https://github.com/gustavokuklinski/" target="_blank"><span class="icon-linkedin"></span> </a>
+                 <a class="github-link" href="https://github.com/gustavokuklinski/" target="_blank"><span class="icon-github"></span> </a>
+                 <a class="github-link" href="https://plus.google.com/+GustavoHenriqueCardosoKuklinskideOliveira" target="_blank"><span class="icon-google-plus-sign"></span> </a>
+                 <a class="github-link" href="http://www.pinterest.com/tuxlinski" target="_blank"><span class="icon-pinterest"></span> </a>
+                 <a class="github-link" href="http://twitter.com/tuxlinski" target="_blank"><span class="icon-twitter"></span> </a>
+                 <a class="github-link" href="http://www.linkedin.com/in/kuklinski" target="_blank"><span class="icon-linkedin"></span> </a>
               </p>
             </div>
           </div>
