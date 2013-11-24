@@ -11,9 +11,9 @@ categories: blog
 O MATE Desktop é um fork do clássico GNOME 2.30. Para quem já pertence a comunidade Linux a um tempo o conhece de anos, já os aspirantes a usuário linux só devem conhecer sua última versão, o GNOME 3. Tudo começou com o fim da versão clássica do GNOME Desktop, o 2.30, com isso a equipe por traz do projeto iniciou um "re-design" do desktop trazendo funcionalidades mais atuais como suporte a telas de toque lembrando bem o Dashboard do OSX aonde são exibidas todas as aplicações instaladas em seu computador e um upgrade na biblioteca GTK2 para GTK3.
 
 # Instalação
-Como o MATE ainda está em faze de desenvolvimento e avanços, não está nos repositórios oficiais da distribuição, mas já existe um time de desenvolvimento trabalhando para trazer o MATE para o Debian. Há distribuições como Arch Linux, OpenSUSE, Mageia, Fedora que já possuem pacotes oficiais com a distribuição.
+Como o MATE ainda está em fase de desenvolvimento, não está nos repositórios oficiais da distribuição mas já existe um time de desenvolvimento trabalhando para trazer o MATE para os repositórios oficiais Debian. Há distribuições como Arch Linux, OpenSUSE, Mageia, Fedora que já possuem pacotes oficiais com a distribuição.
 <br /><br />
-Para instalar o Mate é recomendavel que se tenha conhecimento sobre: linha de comando e como gerenciar o arquivo 'sources.list' encontrado na pasta '/etc/apt/'.
+Para instalar o Mate é recomendável que tenha conhecimento sobre: linha de comando e como gerenciar o arquivo 'sources.list' encontrado na pasta '/etc/apt/'.
 <br /><br />
 # Adicionando repositórios
 Adicionar o repositório dentro do '/etc/apt/sources.list' é uma etapa importantíssima! Pois é com ela que poderemos obter as atualizações de segurança e constantes do Desktop Environment. Para adicionar, vá ao terminal e acesse o arquivo 'sources.list'
