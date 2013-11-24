@@ -1,12 +1,13 @@
 ---
 layout: default
 title: HOME
+keywords: "gustavo, kuklinski, index, home blog, home page"
 ---
 {% for post in paginator.posts %}
 <div class="row">
   <div class="block2 middle posts">
     <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-    <p class="post-date">{{ post.date | date_to_string }}</p>
+    <p class="post-date">{{ post.date | date_to_string }} - <em>Autor: <a href="https://plus.google.com/+GustavoHenriqueCardosoKuklinskideOliveira?rel=author" class="author">GUSTAVO KUKLINSKI</a></em></p>
     <p class="post-description">{{ post.description }}</p>
     <p class="txt-center"><a href="{{ post.url }}" class="bt-success">Ler mais...</a></p>
     <br />

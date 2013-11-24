@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Introducao ao Jekyll - Parte 1
+keywords: "tutorial jekyll, ruby, wordpress cms, wordpress"
 description: Jekyll é uma plataforma para o desenvolvimento de blogs estáticos como esse, ao contrário do Wordpress que dispõe de um banco de dados(MySQL) e utiliza uma linguagem de programação dentro do servidor(PHP). Podemos dizer que esta ferramenta é um blog para "hackers, nerds, geeks ou entusiastas" por sua pequena complexibilidade na hora de criar suas publicações.
 date: 2013-11-23
 categories: blog curso-jekyll
+
 ---
 
 # Introdução
@@ -28,36 +30,36 @@ Quando um novo projeto é iniciado por padrão ele tem uma estrutura básica:
 <br />
 <table>
   <tr>
-    <td><strong>index.html</strong></td>
+    <td>index.html</td>
     <td>Arquivo que contém o loop de todas as postagens realizadas no blog.</td>
   </tr>
   <tr>
-    <td><strong>&#95;config.yml</strong></td>
+    <td>&#95;config.yml</td>
     <td>Configurações como paginação, nome do blog, etc...</td>
   </tr>
   <tr>
-    <td><strong>css/</strong></td>
+    <td>css/</td>
     <td>Arquivos estáticos em CSS</td>
   </tr>
   <tr>
-    <td><strong>&#95;layouts/</strong></td>
+    <td>&#95;layouts/</td>
     <td>Templates da estrutura básica do HTML e de uma única postagem</td>
   </tr>
   <tr>
-    <td><strong>&#95;posts/</strong></td>
+    <td>&#95;posts/</td>
     <td>Arquivos MARKDOWN para postagem</td>
   </tr>
   <tr>
-    <td><strong>&#95;site/</strong></td>
+    <td>&#95;site/</td>
     <td>Resultado do projeto em HTML com todos os apontamentos certos</td>
   </tr>
 </table>
 
-De inicio a pasta <strong>&#95;site/</strong> só é criada quando mandamos o Jekyll compilar o blog.
+De inicio a pasta '&#95;site/' só é criada quando mandamos o Jekyll compilar o blog.
 <br /><br />
 # Criando postagens
 Para iniciarmos postagens em nosso blog, temos algumas convenções básicas do Jekyll, como por exemplo a nomeclatura do arquivo de postagem.<br />
-A nomeclatura segue o seguinte padrão: <strong>ANO-MÊS-DIA-nome-da-postagem.markdown</strong> e deve  ser obrigatóriamente colocado dentro da pasta <strong>&#95;posts/</strong>.<br />
+A nomeclatura segue o seguinte padrão: 'ANO-MÊS-DIA-nome-da-postagem.markdown' e deve  ser obrigatóriamente colocado dentro da pasta '&#95;posts/'.<br />
 Particularmente gosto de utilizar MARKDOWN, porém há outros tipos de templates disponiveis. Dentro do MARKDOWN temos um cabeçalho que deve ser colocado no topo do nosso arquivo, por convenção já está bem auto explicativo:
 {% highlight yaml %}
 ---
@@ -68,7 +70,7 @@ categories: categoria sub-categoria
 ---
 {% endhighlight %}
 <br />
-Na primeira linha: <strong>layout:</strong> é chamado o arquivo: <strong>post</strong> que está na pasta <strong>&#95;layouts/</strong>, então você pode criar vários layouts diferentes para diferentes tipos de postagens.
+Na primeira linha: 'layout:' é chamado o arquivo: 'post' que está na pasta '&#95;layouts/', então você pode criar vários layouts diferentes para diferentes tipos de postagens.
 
 # Compilando o Blog
 Com as postagens realizadas, agora devemos fazer o Jekyll transformar tudo em arquivos estáticos para colocarmos no nosso servidor. Execute o seguinte comando no terminal:
@@ -76,11 +78,11 @@ Com as postagens realizadas, agora devemos fazer o Jekyll transformar tudo em ar
 $ jekyll serve --watch
 {% endhighlight %}
 <br />
-O paramêtro <strong>serve</strong> inicia o servidor em <strong>http://localhost:4000/</strong> e o <strong>--watch</strong> verifica o projeto procurando mudanças para compila-las automaticamente na pasta <strong>&#95;site/</strong>. Abra o navegador e veja se o blog está funcionando.
+O paramêtro 'serve' inicia o servidor em 'http://localhost:4000/' e o '--watch' verifica o projeto procurando mudanças para compila-las automaticamente na pasta '&#95;site/'. Abra o navegador e veja se o blog está funcionando.
 
 # Publicando o Blog em qualquer servidor
 O Jekyll é uma solução simples para quem deseja ter um blog estático e simplório.<br />
-Para realizar o deploy do seu blog no servidor basta copiar os arquivos de dentro da pasta <strong>&#95;site/</strong> para o servidor via FTP.
+Para realizar o deploy do seu blog no servidor basta copiar os arquivos de dentro da pasta '&#95;site/' para o servidor via FTP.
 
 # Considerações finais
 Dúvidas, deixem comentários...Espero que tenha ajudado com esta breve introdução sobre Jekyll...Este é o primeiro de uma série de "aulas" sobre Jekyll que estou desenvolvendo :)
