@@ -10,21 +10,12 @@
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/syntax.css">
-        
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/stellar.js"></script>
-        <script type="text/javascript">
-        $(document).ready(function(){
-          $(window).stellar({
-            positionProperty: 'transform',
-          });
-        });
-        </script>
+
     </head>
     <body>
       <header class="container-fluid">
         <div class="row">
-          <div data-stellar-background-ratio="1.3" data-stellar-horizontal-offset="900" data-stellar-vertical-offset="630" class="block3 
+          <div class="block3 
             {% if page.title == "PORTFOLIO" %}
               header-portfolio
             {% elsif page.title == "CONTATO" %}
@@ -33,10 +24,10 @@
               header-home
             {% endif %}
             ">
-            <h1 class="title" data-stellar-ratio="2.0"><a href="/">{{ site.name }}</a></h1>
-            <h3 class="subtitle" data-stellar-ratio="-3.2">Web Developer :: Linux - Jekyll - Ruby On Rails</h3>
+            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+            <h3 class="subtitle">Web Developer :: Linux - Jekyll - Ruby On Rails</h3>
 
-            <div class="block3 menu begin txt-center" data-stellar-ratio="-3.2">
+            <div class="block3 menu begin txt-center">
               <a href="/">home</a>
               <a href="/portfolio.html">portfolio</a>
               <a href="/contato.html">contato</a>
