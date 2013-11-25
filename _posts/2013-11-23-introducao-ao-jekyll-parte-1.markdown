@@ -5,7 +5,6 @@ keywords: "tutorial jekyll, ruby, wordpress cms, wordpress"
 description: Jekyll é uma plataforma para o desenvolvimento de blogs estáticos como esse, ao contrário do Wordpress que dispõe de um banco de dados(MySQL) e utiliza uma linguagem de programação dentro do servidor(PHP). Podemos dizer que esta ferramenta é um blog para "hackers, nerds, geeks ou entusiastas" por sua pequena complexibilidade na hora de criar suas publicações.
 date: 2013-11-23
 categories: blog curso-jekyll
-
 ---
 
 # Introdução
