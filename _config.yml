@@ -6,4 +6,4 @@ paginate: 5
 paginate_path: "/page:num"
 
 relative_permalinks: true
-permalink: "/:categories/:title.html"
+permalink: "/:categories/:title/"
