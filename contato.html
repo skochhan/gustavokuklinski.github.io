@@ -16,9 +16,10 @@ title: CONTATO
         </p>
       </div>
       <div class="block2-2">
-        <form method="post" action="http://kuklinski.com.br/201306.php">
+        <form method="post" name="formmail" action="http://www.cgi4all.org/cgi-bin/formmail.cgi">
+          <input type="hidden" name="recipient" value="gustavo.kuklinski@gmail.com" />
           <input type="text" name="nome" placeholder="Qual seu nome?" required/>
-          <input type="email" name="email" placeholder="Qual seu email?" required/>
+          <input type="text" name="email" placeholder="Qual seu email?" required/>
           <textarea name="mensagem" placeholder="Então, vamos conversar? :)" required></textarea>
           <input type="submit" value="ENVIAR" class="bt-success" />
         </form>
