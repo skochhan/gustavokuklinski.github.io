@@ -4,7 +4,7 @@ title: Utilizando data-uri
 keywords: "técnica, web design responsivo, rwd, data url, data uri, data, url, uri"
 description: Data URI é um técnica utilizada para otimizar o carregamento de recursos dentro do servidor web. É ideal para trabalhar em design responsivo pois tenta manter a imagem com o máximo de qualidade independente do tipo de medida utilizada.
 date: 2013-11-25
-categories: blog
+categories: blog tutorial
 ---
 
 Data URI é um técnica utilizada para otimizar o carregamento de recursos dentro do servidor web. É ideal para 

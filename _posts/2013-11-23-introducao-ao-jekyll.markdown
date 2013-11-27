@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Introducao ao Jekyll - Parte 1
+title: Introducao ao Jekyll
 keywords: "tutorial jekyll, ruby, wordpress cms, wordpress"
 description: Jekyll é uma plataforma para o desenvolvimento de blogs estáticos como esse, ao contrário do Wordpress que dispõe de um banco de dados(MySQL) e utiliza uma linguagem de programação dentro do servidor(PHP). Podemos dizer que esta ferramenta é um blog para "hackers, nerds, geeks ou entusiastas" por sua pequena complexibilidade na hora de criar suas publicações.
 date: 2013-11-23
-categories: blog curso-jekyll
+categories: blog jekyll
 ---
 
 # Introdução
@@ -82,6 +82,3 @@ O paramêtro 'serve' inicia o servidor em 'http://localhost:4000/' e o '--watch'
 # Publicando o Blog em qualquer servidor
 O Jekyll é uma solução simples para quem deseja ter um blog estático e simplório.<br />
 Para realizar o deploy do seu blog no servidor basta copiar os arquivos de dentro da pasta '&#95;site/' para o servidor via FTP.
-
-# Considerações finais
-Dúvidas, deixem comentários...Espero que tenha ajudado com esta breve introdução sobre Jekyll...Este é o primeiro de uma série de "aulas" sobre Jekyll que estou desenvolvendo :)
