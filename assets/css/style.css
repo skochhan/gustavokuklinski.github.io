@@ -83,13 +83,13 @@ h3.subtitle { font-size: 1.5em; text-align: center; color: #c9c9c9; text-shadow:
 .posts a.bt-success { text-decoration: none; font-family: Arial; }
 
 /* Link do titulo da postagem */
-.posts a.post-title { font-family: 'Poiret One'; font-size: 1.5em; color: #070707; text-decoration: none; text-transform: uppercase; }
+.posts a.post-title { font-family: 'Poiret One'; letter-spacing: 1.8px; font-size: 1.5em; color: #070707; text-decoration: none; text-transform: uppercase; }
 
 /* Link do autor */
 .posts a.author {color: #070707; text-decoration: none; font-size: 0.9em;}
 
 /* Data do post */
-.posts p.post-date { font-family: Arial; font-size: 1em; color: #c7c7c7; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; }
+.posts p.post-date { font-family: Arial; font-size: 1em; color: #c7c7c7; margin-top: -17px; margin-bottom: 7px; text-transform: uppercase; }
 
 /* Post em si...Descrição da Home e completo */
 .posts p.post-description,
@@ -114,7 +114,6 @@ h3.subtitle { font-size: 1.5em; text-align: center; color: #c9c9c9; text-shadow:
 /* ------------------------------------------ */
 #disqus_thread,
 .posts p,
-.posts a.post-title,
 .posts table,
 .posts h1,
 .posts h3,
