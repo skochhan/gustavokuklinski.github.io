@@ -2,19 +2,19 @@
 layout: post
 title: Caderno de Código
 keywords: "caderno, código, caderno de código"
-description: "Há um tempo atrás custumava carregar diversos livros sobre programaçao na mochila para alguma consulta rápida porém acabava ficando pesado e complicado carregar 2 ou 3 livros comigo então achei a solução: Adquirir um Tablet!, mas também não foi a tal solução porquê nenhuma bateria é eterna e as vezes esqueço de coloca-lo para carregar, então ontem(6-12-2013) encontrei outra solução! Um caderno de código."
+description: "Há um tempo atrás costumava carregar diversos livros sobre programação na mochila para alguma consulta rápida porém acabava ficando pesado e complicado carregar 2 ou 3 livros comigo então achei a solução: Adquirir um Tablet!, mas também não foi a tal solução porquê nenhuma bateria é eterna e as vezes esqueço de coloca-lo para carregar, então ontem(6-12-2013) encontrei outra solução! Um caderno de código."
 date: 2013-12-6
 categories: blog pessoal
 ---
 
-Há um tempo atrás custumava carregar diversos livros sobre programaçao na mochila para alguma consulta rápida porém
+Há um tempo atrás costumava carregar diversos livros sobre programação na mochila para alguma consulta rápida porém
 acabava ficando pesado e complicado carregar 2 ou 3 livros comigo então achei a solução: Adquirir um Tablet!, mas também
 não foi a tal solução porquê nenhuma bateria é eterna e as vezes esqueço de coloca-lo para carregar, então ontem(6-12-2013) encontrei
 outra solução! Um caderno de código.
 <br /><br />
 # Caderno de código?
 Livros são pesados, a bateria do tablet não é eterna, então porquê não escrever código em um caderno(Designers 
-e Ilustradores custuman ter seus 'cadernos de rabiscos'.)? Bem, como 
+e Ilustradores costumam ter seus 'cadernos de rabiscos'.)? Bem, como 
 ninguém tem uma mente de ferro para decorar tantas coisas decidi pegar meus livros e transcrever de forma coerente 
 algumas partes das quais acho de extrema importância para consultas rápidas e estudo nas horas vagas, não vou colocar
 aquelas estruturas de dados imensas, mas aquele bloco resumido do qual eu já tenha algum conhecimento sobre ele.
