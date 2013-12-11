@@ -2,7 +2,7 @@ name: KUKLINSKI
 markdown: redcarpet
 pygments: true
 
-paginate: 8
+paginate: 4
 paginate_path: "/page:num"
 
 relative_permalinks: true
