@@ -6,7 +6,7 @@ module.exports = function(grunt) {
             files : {
               'assets/css/scrath.css' : '_assets/scss/scrath.scss',
               'assets/css/style.css' : '_assets/scss/style.scss',
-              'assets/css/syntax.css' : '_assets/scss/style.scss'
+              'assets/css/syntax.css' : '_assets/scss/syntax.scss'
             }
           }
         }, // sass
