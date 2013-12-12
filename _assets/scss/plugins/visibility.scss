@@ -1,0 +1,19 @@
+// ************************************************
+// VISIBILITY 
+// ************************************************
+
+.hide-mobile {
+  display: none;
+}
+.show-mobile {
+  display: block;
+}
+
+@media (min-width: 50.063em) {
+  .hide-desktop {
+    display: none;
+  }
+  .show-desktop {
+    display: block;
+  }
+}

@@ -1,0 +1,163 @@
+@import 'colors';
+// ************************************************
+// BUTTONS
+// ************************************************
+
+// Default form buttons
+@mixin buttom-form {
+	border-radius: 2px;
+	margin-top: 3px;
+	padding: 5px 8px 5px 8px;
+	font: {
+		size: 16px;
+		weight: bold;
+	}
+	color: $default-link-button;
+	cursor: pointer;
+	display: inline-block;
+}
+
+// Hover effect
+@mixin buttom-effect-form {
+	background: $disabled-color-bg;
+	border-color: $disabled-color-bg;
+	color: $disabled-color;
+}
+
+// Few custom
+input[type="submit"],
+input[type="reset"],
+button {
+	border: 2px solid $default-link-button-bg;
+	background: $default-link-button-bg;
+	@include buttom-form;
+
+	&:hover {
+		@include buttom-effect-form;
+	}
+}
+
+// Loop to load different type of buttons: Danger , Warning, success and dark
+@each $bnt-class in bt-warning, bt-danger, bt-disabled, bt-success, bt-dark {
+	input[type="submit"].#{$bnt-class},
+	input[type="reset"].#{$bnt-class},
+	button.#{$bnt-class} {
+
+		@if $bnt-class == bt-warning {
+			border-color: $warning-color-n;
+			background: $warning-color-n;
+
+		} @elseif $bnt-class == bt-danger {
+			border-color: $danger-color-n;
+			background: $danger-color-n;
+
+		} @elseif $bnt-class == bt-success {
+			border-color: $success-color-n;
+			background: $success-color-n;
+
+		} @elseif $bnt-class == bt-dark {
+			border-color: $dark-color-n;
+			background: $dark-color-n;
+
+		}	@else {
+			border-color: $disabled-color-bg;
+			background: $disabled-color-bg;
+
+		}	
+
+		&:hover,
+		&:focus,
+		&:active {
+			@if $bnt-class == bt-warning {
+				border-color: $warning-color-h;
+				background: $warning-color-h;
+
+			} @elseif $bnt-class == bt-danger {
+				border-color: $danger-color-h;
+				background: $danger-color-h;
+
+			} @elseif $bnt-class == bt-success {
+				border-color: $success-color-h;
+				background: $success-color-h;
+
+			}	@elseif $bnt-class == bt-dark {
+				border-color: $dark-color-h;
+				background: $dark-color-h;
+
+			}	@else {
+				color: #ecf0f1;
+				cursor: default;
+				border-color: $disabled-color-bg;
+				background: $disabled-color-bg;
+			}
+		}
+	}
+	
+
+	.#{$bnt-class} {
+		@include buttom-form;
+
+		@if $bnt-class == bt-warning {
+			border-color: $warning-color-n;
+			background: $warning-color-n;
+
+		} @elseif $bnt-class == bt-danger {
+			border-color: $danger-color-n;
+			background: $danger-color-n;
+
+		} @elseif $bnt-class == bt-success {
+			border-color: $success-color-n;
+			background: $success-color-n;
+
+		} @elseif $bnt-class == bt-dark {
+			border-color: $dark-color-n;
+			background: $dark-color-n;
+
+		}	@else {
+			border-color: $disabled-color-bg;
+			background: $disabled-color-bg;
+
+		}
+		
+		&:hover,
+		&:focus,
+		&:active {
+			
+			@if $bnt-class == bt-warning {
+				color: $disabled-color;
+				border-color: $warning-color-h;
+				background: $warning-color-h;
+
+			} @elseif $bnt-class == bt-danger {
+				color: $disabled-color;
+				border-color: $danger-color-h;
+				background: $danger-color-h;
+
+			} @elseif $bnt-class == bt-success {
+				color: $disabled-color;
+				border-color: $success-color-h;
+				background: $success-color-h;
+
+			}	@elseif $bnt-class == bt-dark {
+				color: $disabled-color;
+				border-color: $dark-color-h;
+				background: $dark-color-h;
+
+			}	@else {
+				color: #ecf0f1;
+				border-color: $disabled-color-bg;
+				background: $disabled-color-bg;
+				cursor: default;
+			}
+		}
+	}
+}
+
+// Hack for iPhone/iPad
+input,
+select,
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}

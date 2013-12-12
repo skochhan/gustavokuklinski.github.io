@@ -1,0 +1,56 @@
+// ************************************************
+// RESPONSIVE GRID
+// ************************************************
+
+@media (max-width: 75em) {
+	.container-fix {
+		width: 100%;
+	}
+}
+
+@media (min-width: 50.063em) {
+	@for $i from 1 through 3 {
+		.block#{$i} {
+			@if $i == 1 {
+				width: 31.69%;
+			} @else if $i == 2 {
+				width: 65.81%;
+			} @else {
+				width: 100%;
+			}
+			@include grid;
+			@include fullimg;
+		} 
+
+		// Spacing between grids
+		.block#{$i}:nth-of-type(#{$i}n + 2) {
+			margin-left: 2.4555%;
+		}
+	}
+
+	// Double grid
+	.block2-2 {
+		width: 48.769%;
+		@include grid;
+		@include fullimg;
+	}
+
+	// Spaci between double grids
+	.block2-2:nth-of-type(1n + 2) {
+		margin-left: 2.4555%;
+	}
+
+	// Begin class for new lines
+	.block1.begin,
+	.block2.begin,
+	.block3.begin,
+	.block2-2.begin {
+		margin-left: 0%;
+	}
+
+	// Middle to align a single block to middle of container
+	.block1.middle { left: 34.1%; }
+	.block2.middle { left: 17.1%; }
+	.block3.middle { left: 17.666%; }
+	.block2-2.middle { left: 25.5333%; }
+}

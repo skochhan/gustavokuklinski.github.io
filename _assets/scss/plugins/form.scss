@@ -1,0 +1,99 @@
+@import 'colors';
+// ************************************************
+// FORMS
+// ************************************************
+
+// Global mixins for forms
+$width-input: 98%; // Default width
+
+// Defult framework form style
+@mixin default-form {
+	border: 1px solid $default-form;
+	border-radius: 2px;
+	margin-top: 3px;
+	background: $default-form;
+	padding: 8px 6px 8px 6px;
+	outline: none;
+}
+
+// When hover and active form
+@mixin effects-form {
+	border: 1px solid $default-form-effect;
+	transition: border .6s;
+	-o-transition: border .6s;
+	-moz-transition: border .6s;
+	-webkit-transition: border .6s;
+}
+
+// disabled form
+@mixin disabled-form {
+	color: $disabled-form;
+	border: 2px solid $disabled-form;
+	background: $default-form-effect;
+	outline: none;
+}
+
+// Form HTML selector
+form {
+	width: $width-input;
+	display: inline-block;
+	clear: both;
+}
+
+// Generate every input type
+@each $input-type in text, color, date, datetime, datetime-local, email, file, image, month, number, password, radio, search, tel, time, url, week {
+	input[type="#{$input-type}"] {
+		width: $width-input;
+		@include default-form;
+
+		&:focus,
+		&:hover {
+			@include effects-form;
+		}
+
+		&:disabled {
+			@include disabled-form;
+		}
+	}
+}
+
+// Styles for: Checkbox, Radiobox end Range
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline;
+}
+input[type="range"] {
+	width: 100%;
+	border: none;
+}
+
+// Styles for select and textarea
+select, 
+textarea {
+	width: $width-input;
+	display: inline-block;
+	@include default-form;
+}
+select {
+	color: $select-default;
+	width: $width-input + 2.4;
+
+	&:focus,
+	&:hover {
+		width: $width-input + 1.6666;
+		display: inline-block;
+		@include default-form;
+		@include effects-form;
+	}
+}
+textarea {
+	height: 100px;
+
+	&:focus,
+	&:hover {
+		width: $width-input;
+		display: inline-block;
+		@include default-form;
+		@include effects-form;
+	}
+}

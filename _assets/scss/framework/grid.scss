@@ -1,0 +1,65 @@
+// ************************************************
+// Scrath Framework   
+// ************************************************
+
+
+// Helpers
+// - Helper for grids
+@mixin grid {
+	min-height: 20px;
+	float: left;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+// - Helper for Containers
+@mixin container {
+	height: auto;
+	clear: both;
+	margin: 0 auto;
+	position: relative;
+}
+
+// - Helper full width image
+@mixin fullimg {
+	img {
+		width: 100%;
+	}
+}
+// ************************************************
+
+// Container Fluid with borders
+.container {
+	width: 95%;
+	@include container;
+}
+
+// Container Fluid full Width
+.container-fluid {
+	width: 100%;
+	@include container;
+}
+
+// Container Fixed -- but responsive
+.container-fix {
+	width: 1200px;
+	@include container;
+}
+
+// The Rows
+.row {
+	width: 100%;
+	display: inline-block;
+	clear: both;
+}
+
+// Blocks
+.block1, 
+.block2, 
+.block3, 
+.block2-2  {
+	width: 100%;
+	@include grid;
+	@include fullimg;
+}
