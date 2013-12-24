@@ -2,7 +2,7 @@
 // VISIBILITY 
 // ************************************************
 
-.hide-mobile {
+.hide-mobile, .show-desktop {
   display: none;
 }
 .show-mobile {
@@ -13,7 +13,7 @@
   .hide-desktop {
     display: none;
   }
-  .show-desktop {
+  .show-desktop, .hide-mobile {
     display: block;
   }
 }
