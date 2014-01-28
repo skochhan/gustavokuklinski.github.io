@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Campus Party dia 0
+title: Campus Party dia ZERO
 keywords: "campusparty, campus party, cpbr7, campus"
 description: "Hoje começou a maratona da Campus Party, mas como o título do post diz, dia ZERO pois nada de novo aconteceu, houve apenas a recepção dos campuseiros dentro do evento para iniciar a maratona de uma semana recheada de palestras e conteúdos."
 categories: blog cpbr7
