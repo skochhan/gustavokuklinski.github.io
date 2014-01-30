@@ -74,7 +74,8 @@ h3.subtitle { font-size: 1.5em; text-align: center; color: #c9c9c9; text-shadow:
 /* Titulos de postagens */
 .posts h1 { font-family: Arial; font-size: 1.3em; margin-bottom: 8px; }
 .posts h3 { font-family: Arial; font-size: 1.1em; margin-bottom: 8px; }
-
+.posts ul { font-family: Arial; padding-left: 33px; padding-right: 33px; }
+.posts ul li {line-height: 25px; }
 /* Tabelas */
 .posts table td{ padding-left: 10px; padding-right: 10px; padding-bottom: 4px; padding-top: 4px; font-family: arial; font-size: 0.8em; }
 
