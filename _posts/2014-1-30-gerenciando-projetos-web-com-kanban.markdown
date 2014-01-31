@@ -2,7 +2,7 @@
 layout: post
 title: Gerenciando Projetos Web com Kanban
 keywords: "kanban, projetos, gerência de projetos, desenvolvimento web, web, internet, gerência"
-description: ""
+description: "Kanban é um modelo de score board para gerenciamento de projetos com o intuito de ser algo extremamente simples baseado em apenas três colunas. Ao contrário do Scrum que é uma ideologia mais completa sobre gerenciamento o Kanban consegue ser ótimo para Freelancers e/ou para pequenas empresas que atuam com desenvolvimento web."
 categories: blog tutorial
 ---
 
