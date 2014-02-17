@@ -15,8 +15,13 @@ title: CONTATO
         </p>
       </div>
       <div class="block2-2">
-        <form method="post" name="formmail" action="http://www.cgi4all.org/cgi-bin/formmail.cgi">
-          <input type="hidden" name="recipient" value="gustavo.kuklinski@gmail.com" />
+        <form method="POST" action="http://utils.infolink.com.br/fm/FormMail.cgi">
+            <input type=hidden name="recipient" value="gustavo.kuklinski@gmail.com">
+            <input type=hidden name="redirect" value="http://kuklinski.com.br/">
+            <input type=hidden name="required" value="nome,email,mensagem">
+
+        <!--<form method="post" name="formmail" action="http://www.cgi4all.org/cgi-bin/formmail.cgi">
+          <input type="hidden" name="recipient" value="gustavo.kuklinski@gmail.com" /> -->
           <input type="text" name="nome" placeholder="Qual seu nome?" required/>
           <input type="text" name="email" placeholder="Qual seu email?" required/>
           <textarea name="mensagem" placeholder="Então, vamos conversar?" required></textarea>
