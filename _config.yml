@@ -9,3 +9,7 @@ relative_permalinks: true
 permalink: "/:categories/:title/"
 
 exclude: [CNAME, npm-debug.log, node_modules]
+
+ftp_host: 'ftp.kuklinski.com.br'
+ftp_dir: '/www'
+ftp_passive: false
