@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     sass : {
           dist : {
-            options : { style : 'compressed' },
+            // options : { style : 'compressed' },
             files : {
               'assets/css/scrath.css' : '_assets/scss/scrath.scss',
               'assets/css/style.css' : '_assets/scss/style.scss',

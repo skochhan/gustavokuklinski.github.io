@@ -8,7 +8,7 @@ paginate_path: "/page:num"
 relative_permalinks: true
 permalink: "/:categories/:title/"
 
-exclude: [CNAME, npm-debug.log, node_modules]
+exclude: [npm-debug.log, node_modules, Gruntfile.js, package.json]
 
 ftp_host: 'ftp.kuklinski.com.br'
 ftp_dir: '/www'
