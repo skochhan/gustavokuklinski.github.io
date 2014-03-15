@@ -38,22 +38,26 @@ button {
 }
 
 // Loop to load different type of buttons: Danger , Warning, success and dark
-@each $bnt-class in bt-warning, bt-danger, bt-disabled, bt-success, bt-dark {
+@each $bnt-class in bt-yellow, bt-red, bt-disabled, bt-green, bt-dark, bt-blue {
 	input[type="submit"].#{$bnt-class},
 	input[type="reset"].#{$bnt-class},
 	button.#{$bnt-class} {
 
-		@if $bnt-class == bt-warning {
+		@if $bnt-class == bt-yellow {
 			border-color: $warning-color-n;
 			background: $warning-color-n;
 
-		} @elseif $bnt-class == bt-danger {
+		} @elseif $bnt-class == bt-red {
 			border-color: $danger-color-n;
 			background: $danger-color-n;
 
-		} @elseif $bnt-class == bt-success {
+		} @elseif $bnt-class == bt-green {
 			border-color: $success-color-n;
 			background: $success-color-n;
+
+		} @elseif $bnt-class == bt-blue {
+			border-color: $blue-color-n;
+			background: $blue-color-n;
 
 		} @elseif $bnt-class == bt-dark {
 			border-color: $dark-color-n;
@@ -68,17 +72,21 @@ button {
 		&:hover,
 		&:focus,
 		&:active {
-			@if $bnt-class == bt-warning {
+			@if $bnt-class == bt-yellow {
 				border-color: $warning-color-h;
 				background: $warning-color-h;
 
-			} @elseif $bnt-class == bt-danger {
+			} @elseif $bnt-class == bt-red {
 				border-color: $danger-color-h;
 				background: $danger-color-h;
 
-			} @elseif $bnt-class == bt-success {
+			} @elseif $bnt-class == bt-green {
 				border-color: $success-color-h;
 				background: $success-color-h;
+
+			} @elseif $bnt-class == bt-blue {
+				border-color: $blue-color-h;
+				background: $blue-color-h;
 
 			}	@elseif $bnt-class == bt-dark {
 				border-color: $dark-color-h;
@@ -97,17 +105,21 @@ button {
 	.#{$bnt-class} {
 		@include buttom-form;
 
-		@if $bnt-class == bt-warning {
+		@if $bnt-class == bt-yellow {
 			border-color: $warning-color-n;
 			background: $warning-color-n;
 
-		} @elseif $bnt-class == bt-danger {
+		} @elseif $bnt-class == bt-red {
 			border-color: $danger-color-n;
 			background: $danger-color-n;
 
-		} @elseif $bnt-class == bt-success {
+		} @elseif $bnt-class == bt-green {
 			border-color: $success-color-n;
 			background: $success-color-n;
+
+		} @elseif $bnt-class == bt-blue {
+			border-color: $blue-color-n;
+			background: $blue-color-n;
 
 		} @elseif $bnt-class == bt-dark {
 			border-color: $dark-color-n;
@@ -123,20 +135,24 @@ button {
 		&:focus,
 		&:active {
 			
-			@if $bnt-class == bt-warning {
+			@if $bnt-class == bt-yellow {
 				color: $disabled-color;
 				border-color: $warning-color-h;
 				background: $warning-color-h;
 
-			} @elseif $bnt-class == bt-danger {
+			} @elseif $bnt-class == bt-red {
 				color: $disabled-color;
 				border-color: $danger-color-h;
 				background: $danger-color-h;
 
-			} @elseif $bnt-class == bt-success {
+			} @elseif $bnt-class == bt-green {
 				color: $disabled-color;
 				border-color: $success-color-h;
 				background: $success-color-h;
+
+			} @elseif $bnt-class == bt-blue {
+				border-color: $blue-color-h;
+				background: $blue-color-h;
 
 			}	@elseif $bnt-class == bt-dark {
 				color: $disabled-color;

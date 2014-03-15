@@ -31,62 +31,86 @@
               header-home
             {% endif %}
             ">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <h3 class="subtitle">Per Aspera Ad Inferi</h3>
+            <div class="row dark-mask">
+              <div class="block2-2">
+                <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+              </div>
+              <div class="block2-2">
+                <div class="block3 menu begin txt-center">
+                  <a href="/">home</a>
+                  <a href="/portfolio/">folio</a>
+                  <a href="/contato/">contato</a>
+                </div>
+              </div>
+            </div>
+              <div class="row">
+                <div class="block3">
+                  <p class="hello-message">
+                  {% if page.title == "PORTFOLIO" %}
+                    &lt; FOLIO /&gt;
+                  {% elsif page.title == "CONTATO" %}
+                    &lt; CONTATO /&gt;
+                  {% elsif page.title == post.title %}
+                    {{ post.title }}
+                  {% else %}
+                    &lt;/&gt;
+                  {% endif %}
+                  </p>
+                </div>
+              </div>
+          </div>
 
-            <div class="block3 menu begin txt-center">
-              <a href="/">home</a>
-              <a href="/portfolio/">folio</a>
-              <a href="/contato/">contato</a>
-            </div> 
-          </div>  
+
         </div>
       </header>
-      
-      <section class="container-fix">
-        <div class="row">
-          {{ content }}
-        </div>
-      </section>
-
-      <footer class="container-fluid footer">
-        <br /><br />
-        <div class="container-fix">
+      <div class="dumb-parallax">
+        <section class="container-fluid">
           <div class="row">
-            <div class="block1">
-              <h3 class="about">Projects</h3><br />
-              <p class="about-text">
-                <b>Scrath Framework 2</b><br />
-                <em>Scrath Framework is a personal project as an alternative to the most used frameworks in market for his lightweight and simplicity</em><br />
-                <a class="icon-linkk" href="https://github.com/gustavokuklinski/Scrath2" target="_blank"><span class="icon-github"></span> Fork on GitHub </a>
+
+            {{ content }}
+
+
+          </div>
+        </section>
+
+        <footer class="container-fluid footer">
+          <br /><br />
+          <div class="container-fix">
+            <div class="row">
+              <div class="block1">
+                <h3 class="about">Projects</h3><br />
+                <p class="about-text">
+                  <b>Scrath Framework 2</b><br />
+                  <em>Scrath Framework is a personal project as an alternative to the most used frameworks in market for his lightweight and simplicity</em><br />
+                  <a class="icon-linkk" href="https://github.com/gustavokuklinski/Scrath2" target="_blank"><span class="icon-github"></span> Fork on GitHub </a>
+                  
+                </p>
                 
-              </p>
-              
-            </div>
-            <div class="block1">
-              <h3 class="about">About</h3><br />
-              <p class="about-text">
-                I'm Gustavo Kuklinski a Web Developer based in Rio de Janeiro - Brazil. Right now working for
-                an agency in Rio, developing web sites in HTML5, CSS3, PHP and Wordpress. But I'm falling in love for Ruby :)
-              </p>
-            </div>
-            <div class="block1">
-              <h3 class="about">Social Hub</h3><br />
-              <p class="about-text">
-                Find me here!
-              </p><br /><br />
-              <p>
-                 <a class="github-link" href="https://github.com/gustavokuklinski/" target="_blank"><span class="icon-github"></span> </a>
-                 <a class="github-link" href="https://plus.google.com/+GustavoHenriqueCardosoKuklinskideOliveira" target="_blank"><span class="icon-google-plus-sign"></span> </a>
-                 <a class="github-link" href="http://www.pinterest.com/tuxlinski" target="_blank"><span class="icon-pinterest"></span> </a>
-                 <a class="github-link" href="http://twitter.com/tuxlinski" target="_blank"><span class="icon-twitter"></span> </a>
-                 <a class="github-link" href="http://www.linkedin.com/in/kuklinski" target="_blank"><span class="icon-linkedin"></span> </a>
-              </p>
+              </div>
+              <div class="block1">
+                <h3 class="about">About</h3><br />
+                <p class="about-text">
+                  I'm Gustavo Kuklinski a Web Developer based in Rio de Janeiro - Brazil. Right now working for
+                  an agency in Rio, developing web sites in HTML5, CSS3, PHP and Wordpress. But I'm falling in love for Ruby :)
+                </p>
+              </div>
+              <div class="block1">
+                <h3 class="about">Social Hub</h3><br />
+                <p class="about-text">
+                  Find me here!
+                </p><br /><br />
+                <p>
+                   <a class="github-link" href="https://github.com/gustavokuklinski/" target="_blank"><span class="icon-github"></span> </a>
+                   <a class="github-link" href="https://plus.google.com/+GustavoHenriqueCardosoKuklinskideOliveira" target="_blank"><span class="icon-google-plus-sign"></span> </a>
+                   <a class="github-link" href="http://www.pinterest.com/tuxlinski" target="_blank"><span class="icon-pinterest"></span> </a>
+                   <a class="github-link" href="http://twitter.com/tuxlinski" target="_blank"><span class="icon-twitter"></span> </a>
+                   <a class="github-link" href="http://www.linkedin.com/in/kuklinski" target="_blank"><span class="icon-linkedin"></span> </a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
-
+        </footer>
+      </div>
       <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-38537962-1']);

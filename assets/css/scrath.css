@@ -96,6 +96,12 @@
   .block2-2:nth-of-type(1n + 2) {
     margin-left: 2.4555%; }
 
+  .block2-2:nth-of-type(1n + 3) {
+    margin-left: 0%; }
+
+  .block2-2:nth-of-type(1n + 4) {
+    margin-left: 2.4555%; }
+
   .block1.begin,
   .block2.begin,
   .block3.begin,
