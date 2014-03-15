@@ -56,6 +56,13 @@ hr {
   color: #ffffff;
   text-align: center;
   padding-top: 200px; }
+  .hello-message a.github-link {
+    font-size: 0.7em;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: -80px; }
+  .hello-message a.github-link:hover {
+    opacity: .5; }
 
 /* ------------------------------------------ */
 /* Header */
