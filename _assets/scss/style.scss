@@ -166,18 +166,39 @@ h3.subtitle { font-size: 1.5em; text-align: center; color: #c9c9c9; text-shadow:
 		font-size: 7em;
 	}
 }
+@media(max-width: 800px) {
+	.header-home {height: 400px !important;}
+	.header-portfolio {height: 400px !important;}
+	.header-contato {height: 400px !important;}
+	.dumb-parallax {
+		margin-top: 400px;
+	}
+}
 @media(max-width: 753px) {
 	.hello-message {
 		font-size: 4em;
 		padding-top: 200px;
 	}
+	.header-home {height: 300px !important;}
+	.header-portfolio {height: 300px !important;}
+	.header-contato {height: 300px !important;}
+	.dumb-parallax {
+		margin-top: 300px;
+	}
 }
-@media(max-width: 530px) {
-  h1.title { font-size: 4em; }
+@media(max-width: 480px) {
+	h1.title {font-size: 2em;}
+	.menu { margin-top: 25px; }
 }
 @media(max-width: 428px) {
 	.hello-message {
 		font-size: 2em;
-		padding-top: 300px;
+		padding-top: 200px;
+
+		a.github-link {
+			display: none;
+		}
 	}
+
+
 }
